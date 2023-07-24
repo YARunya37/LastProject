@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] float startScale;
 	[SerializeField] float fallingScale;
 	[SerializeField] LayerMask ground;
-	[SerializeField] Transform maxPosition;
 	float fallingPoint;
 	Rigidbody2D rb;
 	void Start()
