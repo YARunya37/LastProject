@@ -14,7 +14,7 @@ public class SceneChanging : MonoBehaviour
 	{
 		if(other.gameObject.CompareTag("Player"))
 		{
-			gm.instance.SceneLoader(1);
+			gm.SceneLoader(1);
 		}	
 	}
 }

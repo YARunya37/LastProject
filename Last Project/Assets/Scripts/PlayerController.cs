@@ -4,22 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	[SerializeField] float speed;
-	[SerializeField] float jumpForce;
-	[SerializeField] float startScale;
-	[SerializeField] float fallingScale;
-	[SerializeField] LayerMask ground;
-	float fallingPoint;
-	Rigidbody2D rb;
+	protected Rigidbody2D rb;
+	[SerializeField] float dashForce;
+	float speed = 8;
+	GameManager gm;
+	
 	void Start()
 	{
+		gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 		rb = GetComponent<Rigidbody2D>();
-		fallingPoint = 0.2f;
 	}
 	void Update()
 	{
-		Move();
-		Jump();
+		Move(); 	
 	}
 	void Move()
 	{
@@ -32,25 +29,12 @@ public class PlayerController : MonoBehaviour
 			rb.velocity = new Vector2(0, rb.velocity.y);
 		}
 	}
-	void Jump()
-	{
-		if (Input.GetButtonDown("Jump") && IsGrounded())
-		{
-			rb.gravityScale = startScale;
-			rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
-		}
-		if(rb.velocity.y <= fallingPoint)
-		{
-			rb.gravityScale = fallingScale;
-		}
-	}
-	bool IsGrounded()
-	{
 
-		if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.1f, ground))
+	void Dash()
+	{
+		if (gm.canDash && Input.GetKeyDown(KeyCode.LeftShift))
 		{
-			return true;
+			rb.AddForce(new Vector2(dashForce, rb.velocity.y), ForceMode2D.Impulse);
 		}
-		return false;
 	}
 }

@@ -1860,6 +1860,7 @@ GameObject:
   - component: {fileID: 1397290783}
   - component: {fileID: 1397290782}
   - component: {fileID: 1397290784}
+  - component: {fileID: 1397290785}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1993,7 +1994,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7084b4a81e7fe4ca4531a54958405a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  dashForce: 0
+--- !u!114 &1397290785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397290779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90483aa32771b566a2fe5148f0de3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashForce: 0
   jumpForce: 13
   startScale: 3
   fallingScale: 2
@@ -2140,7 +2154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d4020b3dd4f5c299286f63775d83e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instance: {fileID: 0}
+  isDashAvaliable: 0
+  canDash: 0
 --- !u!4 &1510036322
 Transform:
   m_ObjectHideFlags: 0

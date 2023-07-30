@@ -5,11 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-	public GameManager instance;
-	void Start() 
-	{
-		instance = GetComponent<GameManager>();	
-	}
+	public bool isDashAvaliable;
+	public bool canDash;
 	public void SceneLoader(int sceneNum)
 	{
 		SceneManager.LoadScene(sceneNum);
