@@ -5,9 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 	protected Rigidbody2D rb;
-	[SerializeField] float dashForce;
 	float speed = 8;
-	GameManager gm;
+	protected GameManager gm;
 	
 	void Start()
 	{
@@ -27,14 +26,6 @@ public class PlayerController : MonoBehaviour
 		else
 		{
 			rb.velocity = new Vector2(0, rb.velocity.y);
-		}
-	}
-
-	void Dash()
-	{
-		if (gm.canDash && Input.GetKeyDown(KeyCode.LeftShift))
-		{
-			rb.AddForce(new Vector2(dashForce, rb.velocity.y), ForceMode2D.Impulse);
 		}
 	}
 }
