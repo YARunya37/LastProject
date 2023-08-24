@@ -29,13 +29,12 @@ public class JumpScript : PlayerController
 			rb.gravityScale = fallingScale;
 		}
 	}
-	bool IsGrounded()
-	{
-
-		if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.1f, ground))
-		{
-			return true;
-		}
-		return false;
-	}
+    bool IsGrounded()
+    {
+        if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.1f, ground))
+        {
+            return true;
+        }
+        return false;
+    }
 }

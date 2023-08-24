@@ -28,4 +28,15 @@ public class PlayerController : MonoBehaviour
 			rb.velocity = new Vector2(0, rb.velocity.y);
 		}
 	}
+	protected float GetDirection()
+	{
+		if(Input.GetAxis("Horizontal") == 1)
+		{
+			return 1;
+		}
+		else
+		{ 
+			return -1; 
+		}
+	}
 }
