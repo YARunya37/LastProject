@@ -1514,6 +1514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bba6d5c50de05fb920d0f12e36d744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lvlNum: 1
 --- !u!1 &1358926927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1994,7 +1995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af7084b4a81e7fe4ca4531a54958405a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashForce: 0
+  walls:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &1397290785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2010,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f90483aa32771b566a2fe5148f0de3bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashForce: 0
+  walls:
+    serializedVersion: 2
+    m_Bits: 0
   jumpForce: 13
   startScale: 3
   fallingScale: 2
@@ -2155,7 +2160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDashAvaliable: 0
-  canDash: 0
+  shortCut: {fileID: 0}
 --- !u!4 &1510036322
 Transform:
   m_ObjectHideFlags: 0

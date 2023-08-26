@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-	public bool isDashAvaliable;
+	public bool isDashAvaliable = false;
+	[SerializeField] GameObject shortCut;
 	GameObject player;
     private void Start()
     {
@@ -18,9 +19,13 @@ public class GameManager : MonoBehaviour
 	public void Ability(string plateTag)
 	{
 		//определяем какую способность используем: если способность такая то скрипт ON 
-		if(plateTag == "DashPlate")
+		if(plateTag == "DashPlate" && isDashAvaliable)
 		{
 			player.GetComponent<DashScript>().enabled = true;
+		}
+		if(plateTag == "Shortcuter")
+		{
+			shortCut.SetActive(false);
 		}
 	}
 }

@@ -31,7 +31,9 @@ public class JumpScript : PlayerController
 	}
     bool IsGrounded()
     {
-        if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.1f, ground))
+        if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.1f, ground) 
+			|| Physics2D.Raycast(transform.position - new Vector3(0.5f, 0.5f), Vector2.down, 0.1f, ground) 
+			|| Physics2D.Raycast(transform.position - new Vector3(-0.5f, 0.5f), Vector2.down, 0.1f, ground))
         {
             return true;
         }
