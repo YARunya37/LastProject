@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
 	{
 		CanMove();
 		Move();
+		Cheats();
 	}
 	void Move()
 	{
@@ -49,13 +50,20 @@ public class PlayerController : MonoBehaviour
 	}
 	protected float GetDirection()
 	{
-		if(Input.GetAxis("Horizontal") == 1)
+		if (Input.GetAxis("Horizontal") == 1)
 		{
 			return 1;
 		}
 		else
-		{ 
-			return -1; 
+		{
+			return -1;
+		}
+	}
+	void Cheats()
+	{
+		if (Input.GetKeyDown(KeyCode.K))
+		{
+			gm.isDashAvaliable = true;
 		}
 	}
 }

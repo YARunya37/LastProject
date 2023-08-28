@@ -29,6 +29,7 @@ public class DashScript : PlayerController
         yield return new WaitForSeconds(dashDuration);
         rb.gravityScale = lastGravity;  
         GetComponent<DashScript>().enabled = false;//отключаем скрипт после рывка
+        GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>().color = Color.white;
         GetComponent<JumpScript>() .enabled = true; 
         GetComponent<PlayerController>().enabled = true;
     }
