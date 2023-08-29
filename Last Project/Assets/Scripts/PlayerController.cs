@@ -15,15 +15,14 @@ public class PlayerController : MonoBehaviour
 	}
 	void Update()
 	{
-		CanMove();
 		Move();
 		Cheats();
 	}
 	void Move()
 	{
-		if (Input.GetButton("Horizontal") && CanMove())
+        if (Input.GetButton("Horizontal") && CanMove())
 		{
-			
+			CanMove();
 			rb.velocity = new Vector2(speed * Input.GetAxis("Horizontal"), rb.velocity.y);
 		}
 		else
@@ -35,14 +34,12 @@ public class PlayerController : MonoBehaviour
 	{
         for (float i = 0.5f; i >= -0.5f; i -= 0.5f)
 		{
-			if(Physics2D.Raycast(transform.position - new Vector3(-0.5f, i), Vector2.right, 0.02f, walls))
+			if(Physics2D.Raycast(transform.position - new Vector3(-0.5f, i), Vector2.right, 0.02f, walls) && Input.GetAxis("Horizontal") > 0)
 			{
-                rb.AddForce(new Vector2(-0.5f, 0), ForceMode2D.Impulse);
-                return false;
+				return false;
 			}
-			else if(Physics2D.Raycast(transform.position - new Vector3(0.5f, i), Vector2.left, 0.02f, walls))
+			else if(Physics2D.Raycast(transform.position - new Vector3(0.5f, i), Vector2.left, 0.02f, walls) && Input.GetAxis("Horizontal") < 0)
 			{
-				rb.AddForce(new Vector2(0.5f,0), ForceMode2D.Impulse);
 				return false;
 			}
 		}

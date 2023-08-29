@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 	public bool isDashAvaliable = false;
 	[SerializeField] GameObject shortCut;
 	[SerializeField] Canvas canvas;
+	int curScene;
 	GameObject player;
     private void Start()
     {
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
 		if (sceneNum == 999)
 		{
 			Application.Quit();
-		}
+		}				
 		SceneManager.LoadScene(sceneNum);
 	}
 	
