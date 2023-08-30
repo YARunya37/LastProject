@@ -20,7 +20,7 @@ public class Room : MonoBehaviour
         { 
             nextVirtualCam.SetActive(true);
         }
-        else if(other.CompareTag("Player") && !other.isTrigger)
+        if(other.CompareTag("Player") && !other.isTrigger)
         {
             curVirtualCam.SetActive(false);
         }

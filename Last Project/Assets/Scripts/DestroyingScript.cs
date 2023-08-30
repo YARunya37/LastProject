@@ -17,7 +17,7 @@ public class DestroyingScript : MonoBehaviour
 		plCol = GetComponent<BoxCollider2D>();
 		spr = GetComponent<SpriteRenderer>();
 	}
-	void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
 	{
 		if (other.gameObject.CompareTag("Player"))
 		{
