@@ -6,6 +6,7 @@ public class DashScript : PlayerController
 {
     [SerializeField] float dashForce;
     [SerializeField] float dashDuration;
+    [SerializeField] Canvas UI;
     float lastGravity;
     void Start()
     {
@@ -15,6 +16,7 @@ public class DashScript : PlayerController
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            UI.enabled = false;
             GetComponent<JumpScript>().enabled = false;
             GetComponent<PlayerController>().enabled = false;
             lastGravity = rb.gravityScale; 

@@ -7,6 +7,7 @@ TagManager:
   - GameManager
   - DashPlate
   - Shortcuter
+  - End
   layers:
   - Default
   - TransparentFX

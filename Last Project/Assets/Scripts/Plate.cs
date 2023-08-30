@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Plate : MonoBehaviour
 {
+    [SerializeField] AudioSource au;
     GameManager gm;
     private void Start()
     {
@@ -13,7 +14,7 @@ public class Plate : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            gm.Ability(gameObject.tag);
+            gm.Ability(gameObject.tag, au);
         }  
     }
 } 

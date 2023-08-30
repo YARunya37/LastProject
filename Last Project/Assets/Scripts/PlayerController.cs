@@ -16,7 +16,6 @@ public class PlayerController : MonoBehaviour
 	void Update()
 	{
 		Move();
-		Cheats();
 	}
 	void Move()
 	{
@@ -54,13 +53,6 @@ public class PlayerController : MonoBehaviour
 		else
 		{
 			return -1;
-		}
-	}
-	void Cheats()
-	{
-		if (Input.GetKeyDown(KeyCode.K))
-		{
-			gm.isDashAvaliable = true;
 		}
 	}
 }

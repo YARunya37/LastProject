@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class JumpScript : PlayerController
 {
+	[SerializeField] AudioSource jump;	
 	[SerializeField] float jumpForce = 13f;
 	[SerializeField] float startScale = 3;
 	[SerializeField] float fallingScale = 2;
@@ -15,12 +16,13 @@ public class JumpScript : PlayerController
 	}
 	void Update()
 	{
-		Jump();
+		IsGrounded();
+        Jump();
 	}
 	void Jump()
 	{
 		if (Input.GetButtonDown("Jump") && IsGrounded())
-		{
+		{	
 			rb.gravityScale = startScale;
 			rb.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
 		}
@@ -37,6 +39,7 @@ public class JumpScript : PlayerController
         {
             return true;
         }
+		jump.Play();
         return false;
     }
 }

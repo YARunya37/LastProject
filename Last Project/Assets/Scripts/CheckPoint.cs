@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CheckPoint : MonoBehaviour
 {
+    [SerializeField] AudioSource au;
     [SerializeField] Transform spawnPoint;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") && !other.isTrigger)
         {
             other.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+            au.Play();
             other.gameObject.transform.position = spawnPoint.position + new Vector3(0, 1, 0);
             Invoke("ChangeColour", 0.5f);
         }

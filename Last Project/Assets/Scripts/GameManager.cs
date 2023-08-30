@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,8 +9,8 @@ public class GameManager : MonoBehaviour
 	public bool isDashAvaliable = false;
 	[SerializeField] GameObject shortCut;
 	[SerializeField] Canvas canvas;
-	int curScene;
-	GameObject player;
+	[SerializeField] Canvas UI;
+	GameObject player;	
     private void Start()
     {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -34,20 +35,30 @@ public class GameManager : MonoBehaviour
 		if (sceneNum == 999)
 		{
 			Application.Quit();
-		}				
+		}
+        if (sceneNum == 1 && SceneManager.GetSceneByBuildIndex(2) == SceneManager.GetActiveScene())
+		{
+			GameObject.FindGameObjectWithTag("End").SetActive(false);
+        }
+		if (GameObject.FindGameObjectWithTag("End") != null)
+		{
+			DontDestroyOnLoad(GameObject.FindGameObjectWithTag("End"));
+		}
 		SceneManager.LoadScene(sceneNum);
 	}
 	
-	public void Ability(string plateTag)
+	public void Ability(string plateTag, AudioSource au)
 	{
 		//определяем какую способность используем: если способность такая то скрипт ON 
 		if(plateTag == "DashPlate" && isDashAvaliable)
 		{
 			player.GetComponent<DashScript>().enabled = true;
             player.GetComponent<SpriteRenderer>().color = new Color(0.0509804f, 0.3333333f, 0.3568628f);
+			UI.enabled = true;
 		}
 		if(plateTag == "Shortcuter")
 		{
+			au.Play();
 			shortCut.SetActive(false);
 		}
 	}
