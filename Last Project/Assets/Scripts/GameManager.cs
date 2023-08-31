@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -36,7 +35,7 @@ public class GameManager : MonoBehaviour
 		{
 			Application.Quit();
 		}
-        if (sceneNum == 1 && SceneManager.GetSceneByBuildIndex(2) == SceneManager.GetActiveScene())
+        if (sceneNum == 1 && SceneManager.GetSceneByBuildIndex(2) == SceneManager.GetActiveScene() && GameObject.FindGameObjectWithTag("End") != null)
 		{
 			GameObject.FindGameObjectWithTag("End").SetActive(false);
         }

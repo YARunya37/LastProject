@@ -1068,7 +1068,7 @@ GameObject:
   - component: {fileID: 111215511}
   - component: {fileID: 111215510}
   - component: {fileID: 111215513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -1110,7 +1110,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.77
+  orthographic size: 4.22
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1134,7 +1134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 111215509}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.104835, y: 26.201561, z: -10}
+  m_LocalPosition: {x: -6.0952063, y: 26.523003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1926,7 +1926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 187192088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.83999, y: -2.1500008, z: -5.1599846}
+  m_LocalPosition: {x: -92.479996, y: -2.1500008, z: -5.1599846}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2726,7 +2726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: -0.2815237, y: 3.2170067, z: 0}
+  m_TrackedObjectOffset: {x: 1.7281046, y: 3.2170067, z: 0}
   m_LookaheadTime: 0.443
   m_LookaheadSmoothing: 14.5
   m_LookaheadIgnoreY: 0
@@ -7211,7 +7211,7 @@ GameObject:
   - component: {fileID: 1039717144}
   - component: {fileID: 1039717145}
   - component: {fileID: 1039717146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
