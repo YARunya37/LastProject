@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
 	}
 	bool CanMove()
 	{
-        for (float i = 0.5f; i >= -0.5f; i -= 0.5f)
+        for (float i = 0.5f; i >= -0.5f; i -= 0.1f)
 		{
 			if(Physics2D.Raycast(transform.position - new Vector3(-0.5f, i), Vector2.right, 0.02f, walls) && Input.GetAxis("Horizontal") > 0)
 			{

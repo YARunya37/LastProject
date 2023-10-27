@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 420613324}
   - component: {fileID: 420613323}
   - component: {fileID: 420613322}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -804,7 +804,7 @@ GameObject:
   - component: {fileID: 427053603}
   - component: {fileID: 427053602}
   - component: {fileID: 427053601}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1034,7 @@ GameObject:
   - component: {fileID: 621481760}
   - component: {fileID: 621481759}
   - component: {fileID: 621481758}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2780,7 +2780,7 @@ GameObject:
   - component: {fileID: 1172928426}
   - component: {fileID: 1172928425}
   - component: {fileID: 1172928424}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3051,7 +3051,7 @@ GameObject:
   - component: {fileID: 1358926930}
   - component: {fileID: 1358926929}
   - component: {fileID: 1358926928}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3341,7 +3341,7 @@ GameObject:
   - component: {fileID: 1380349179}
   - component: {fileID: 1380349178}
   - component: {fileID: 1380349177}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3697,7 +3697,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1510036322}
   - component: {fileID: 1510036321}
-  - component: {fileID: 1510036323}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -3739,19 +3738,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1510036323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510036320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e38f482444f10b4ca3d8b3a792307f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UI: {fileID: 962374043}
 --- !u!1 &1605138354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4006,7 +3992,7 @@ GameObject:
   - component: {fileID: 1659490450}
   - component: {fileID: 1659490449}
   - component: {fileID: 1659490448}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4748,7 +4734,7 @@ GameObject:
   - component: {fileID: 1946056257}
   - component: {fileID: 1946056256}
   - component: {fileID: 1946056255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5020,7 +5006,7 @@ GameObject:
   - component: {fileID: 2117586710}
   - component: {fileID: 2117586709}
   - component: {fileID: 2117586708}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

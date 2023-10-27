@@ -35,14 +35,6 @@ public class GameManager : MonoBehaviour
 		{
 			Application.Quit();
 		}
-        if (sceneNum == 1 && SceneManager.GetSceneByBuildIndex(2) == SceneManager.GetActiveScene() && GameObject.FindGameObjectWithTag("End") != null)
-		{
-			GameObject.FindGameObjectWithTag("End").SetActive(false);
-        }
-		if (GameObject.FindGameObjectWithTag("End") != null)
-		{
-			DontDestroyOnLoad(GameObject.FindGameObjectWithTag("End"));
-		}
 		SceneManager.LoadScene(sceneNum);
 	}
 	
