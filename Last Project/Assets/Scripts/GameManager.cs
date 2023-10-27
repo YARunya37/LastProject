@@ -34,9 +34,17 @@ public class GameManager : MonoBehaviour
 		if (sceneNum == 999)
 		{
 			Application.Quit();
-		}		
-		SceneManager.LoadScene(sceneNum);		
-    }
+		}
+        if (sceneNum == 1 && SceneManager.GetSceneByBuildIndex(2) == SceneManager.GetActiveScene() && GameObject.FindGameObjectWithTag("End") != null)
+		{
+			GameObject.FindGameObjectWithTag("End").SetActive(false);
+        }
+		if (GameObject.FindGameObjectWithTag("End") != null)
+		{
+			DontDestroyOnLoad(GameObject.FindGameObjectWithTag("End"));
+		}
+		SceneManager.LoadScene(sceneNum);
+	}
 	
 	public void Ability(string plateTag, AudioSource au)
 	{
