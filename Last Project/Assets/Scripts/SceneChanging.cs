@@ -17,4 +17,5 @@ public class SceneChanging : MonoBehaviour
 			gm.SceneLoader(lvlNum);
 		}	
 	}
+	
 }

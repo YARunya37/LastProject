@@ -16,7 +16,6 @@ public class JumpScript : PlayerController
 	}
 	void Update()
 	{
-		IsGrounded();
         Jump();
 	}
 	void Jump()
@@ -31,15 +30,14 @@ public class JumpScript : PlayerController
 			rb.gravityScale = fallingScale;
 		}
 	}
-    bool IsGrounded()
+    public bool IsGrounded()
     {
-        if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.1f, ground) 
-			|| Physics2D.Raycast(transform.position - new Vector3(0.5f, 0.5f), Vector2.down, 0.1f, ground) 
-			|| Physics2D.Raycast(transform.position - new Vector3(-0.5f, 0.5f), Vector2.down, 0.1f, ground))
+        if (Physics2D.Raycast(transform.position - new Vector3(0, 0.5f), Vector2.down, 0.05f, ground) 
+			|| Physics2D.Raycast(transform.position - new Vector3(0.5f, 0.5f), Vector2.down, 0.05f, ground) 
+			|| Physics2D.Raycast(transform.position - new Vector3(-0.5f, 0.5f), Vector2.down, 0.05f, ground))
         {
             return true;
         }
-		jump.Play();
         return false;
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - DashPlate
   - Shortcuter
   - End
+  - Cameras
+  - JumpPlate
   layers:
   - Default
   - TransparentFX
