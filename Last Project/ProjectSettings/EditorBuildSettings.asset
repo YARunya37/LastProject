@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lvl2Street.unity
     guid: 3f04fdca9e6b72f4f88352f366215ce6
+  - enabled: 1
+    path: Assets/Scenes/Lvl2.unity
+    guid: 4962a2626cb3ea341b894306bb9b3859
   m_configObjects: {}
