@@ -1527,6 +1527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   au: {fileID: 150437948}
+  jumpForce: 0
 --- !u!61 &150437947
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2156,7 +2157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.3679245, g: 0.3679245, b: 0.3679245, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -6815,6 +6816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   au: {fileID: 0}
+  jumpForce: 0
 --- !u!1 &993322431
 GameObject:
   m_ObjectHideFlags: 0
@@ -11107,6 +11109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   au: {fileID: 0}
+  jumpForce: 0
 --- !u!1 &1479560036
 GameObject:
   m_ObjectHideFlags: 0
@@ -11477,6 +11480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   au: {fileID: 0}
+  jumpForce: 0
 --- !u!61 &1485553078
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11516,6 +11520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   au: {fileID: 0}
+  jumpForce: 0
 --- !u!1 &1486604426
 GameObject:
   m_ObjectHideFlags: 0
