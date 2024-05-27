@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 	protected Rigidbody2D rb;
 	protected GameManager gm;
 	float speed = 8;
+	float lastdirection = 0;
 	void Start()
 	{
 		gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -48,11 +49,17 @@ public class PlayerController : MonoBehaviour
 	{
 		if (Input.GetAxis("Horizontal") == 1)
 		{
+			lastdirection = 1;
 			return 1;
+		}
+		else if(Input.GetAxis("Horizontal") == -1)
+		{
+			lastdirection = -1;
+			return -1;
 		}
 		else
 		{
-			return -1;
+			return lastdirection;
 		}
 	}
 }

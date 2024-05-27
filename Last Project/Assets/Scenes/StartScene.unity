@@ -190,7 +190,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curVirtualCam: {fileID: 62842642}
-  nextVirtualCam: {fileID: 0}
 --- !u!4 &9498617
 Transform:
   m_ObjectHideFlags: 0
@@ -1276,7 +1275,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curVirtualCam: {fileID: 2131852725}
-  nextVirtualCam: {fileID: 0}
 --- !u!4 &731816964
 Transform:
   m_ObjectHideFlags: 0
@@ -3039,7 +3037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1bba6d5c50de05fb920d0f12e36d744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lvlNum: 2
+  sceneNum: 2
 --- !u!1 &1358926927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,7 +3874,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curVirtualCam: {fileID: 746721663}
-  nextVirtualCam: {fileID: 0}
 --- !u!4 &1632732956
 Transform:
   m_ObjectHideFlags: 0
@@ -4329,7 +4326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curVirtualCam: {fileID: 315495218}
-  nextVirtualCam: {fileID: 0}
 --- !u!60 &1771281570
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4676,7 +4672,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   curVirtualCam: {fileID: 1704384600}
-  nextVirtualCam: {fileID: 315495218}
 --- !u!60 &1926496948
 PolygonCollider2D:
   m_ObjectHideFlags: 0

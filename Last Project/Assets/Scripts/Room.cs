@@ -5,7 +5,6 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     [SerializeField] GameObject curVirtualCam;
-    [SerializeField] GameObject nextVirtualCam;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") && !other.isTrigger)
@@ -15,11 +14,6 @@ public class Room : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        
-        if (other.CompareTag("Player") && !other.isTrigger && nextVirtualCam != null)
-        { 
-            nextVirtualCam.SetActive(true);
-        }
         if(other.CompareTag("Player") && !other.isTrigger)
         {
             curVirtualCam.SetActive(false);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SceneChanging : MonoBehaviour
 {
 	GameManager gm;
-	[SerializeField] int lvlNum;
+	[SerializeField] int sceneNum;
 	void Start() 
 	{
 		gm = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -14,7 +14,7 @@ public class SceneChanging : MonoBehaviour
 	{
 		if(other.gameObject.CompareTag("Player"))
 		{
-			gm.SceneLoader(lvlNum);
+			gm.SceneLoader(sceneNum);
 		}	
 	}
 	

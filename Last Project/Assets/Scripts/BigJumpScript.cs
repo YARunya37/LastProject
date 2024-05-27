@@ -32,6 +32,5 @@ public class BigJumpScript : JumpScript
 			gameObject.GetComponent<BigJumpScript>().enabled = false;
 			gameObject.GetComponent<SpriteRenderer>().color = Color.white;
 		}
-
 	}
 }
