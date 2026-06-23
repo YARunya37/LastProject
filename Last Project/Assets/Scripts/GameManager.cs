@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-	public bool isDashAvaliable = false;
 	[SerializeField] GameObject shortCut;
 	[SerializeField] Canvas canvas;
 	[SerializeField] Canvas UI;
