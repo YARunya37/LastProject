@@ -5651,11 +5651,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1522567907}
   - component: {fileID: 1522567906}
-  - component: {fileID: 1522567908}
+  - component: {fileID: 1522567910}
   - component: {fileID: 1522567909}
   m_Layer: 0
   m_Name: JumpBoard
-  m_TagString: JumpPlate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5727,20 +5727,6 @@ Transform:
   m_Father: {fileID: 2054068195}
   m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1522567908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522567905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b2a5f24faefc659971fd590f28a5a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  au: {fileID: 0}
-  jumpForce: 25
 --- !u!61 &1522567909
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5767,6 +5753,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.2789395}
   m_EdgeRadius: 0
+--- !u!114 &1522567910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522567905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c078c789b663f541860ebd4065f63c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  jumpForce: 25
 --- !u!1 &1551863290
 GameObject:
   m_ObjectHideFlags: 0

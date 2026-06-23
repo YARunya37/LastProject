@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 	[SerializeField] GameObject shortCut;
 	[SerializeField] Canvas canvas;
 	[SerializeField] Canvas UI;
-	GameObject player;	
+	GameObject player;
 	private void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -36,27 +36,5 @@ public class GameManager : MonoBehaviour
 			Application.Quit();
 		}
 		SceneManager.LoadScene(sceneNum);
-	}
-	
-	public void Ability(string plateTag, AudioSource au)
-	{
-		//���������� ����� ����������� ����������: ���� ����������� ����� �� ������ ON 
-		if(plateTag == "DashPlate" && isDashAvaliable)
-		{
-			player.GetComponent<DashScript>().enabled = true;
-			player.GetComponent<SpriteRenderer>().color = new Color(0.0509804f, 0.3333333f, 0.3568628f);
-			UI.enabled = true;
-		}
-		if(plateTag == "Shortcuter")
-		{
-			au.Play();
-			shortCut.SetActive(false);
-		}
-		if(plateTag == "JumpPlate")
-		{
-			player.GetComponent<BigJumpScript>().enabled = true;
-			player.GetComponent<SpriteRenderer>().color = new Color(0.866666f, 0.3568628f, 0.3568628f);
-			UI.enabled = true;
-		}
 	}
 }

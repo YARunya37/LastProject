@@ -5,11 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - GameManager
-  - DashPlate
-  - Shortcuter
   - End
   - Cameras
-  - JumpPlate
   layers:
   - Default
   - TransparentFX

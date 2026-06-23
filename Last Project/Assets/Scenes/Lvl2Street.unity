@@ -4623,7 +4623,7 @@ GameObject:
   - component: {fileID: 1380894606}
   m_Layer: 0
   m_Name: JumpBoard (1)
-  m_TagString: JumpPlate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4730,10 +4730,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1380894602}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b2a5f24faefc659971fd590f28a5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c078c789b663f541860ebd4065f63c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  au: {fileID: 0}
+  audioSource: {fileID: 0}
   jumpForce: 15
 --- !u!1 &1390160310
 GameObject:
@@ -5348,7 +5348,7 @@ GameObject:
   - component: {fileID: 1472892256}
   m_Layer: 0
   m_Name: JumpBoard
-  m_TagString: JumpPlate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5455,10 +5455,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1472892252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b2a5f24faefc659971fd590f28a5a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c078c789b663f541860ebd4065f63c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  au: {fileID: 0}
+  audioSource: {fileID: 0}
   jumpForce: 15
 --- !u!1 &1628688582
 GameObject:
@@ -7624,28 +7624,14 @@ GameObject:
   - component: {fileID: 2106765778}
   - component: {fileID: 2106765777}
   - component: {fileID: 2106765776}
-  - component: {fileID: 2106765775}
+  - component: {fileID: 2106765779}
   m_Layer: 0
   m_Name: JumpBoard (2)
-  m_TagString: JumpPlate
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2106765775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2106765774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b2a5f24faefc659971fd590f28a5a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  au: {fileID: 0}
-  jumpForce: 15
 --- !u!61 &2106765776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7739,6 +7725,20 @@ Transform:
   m_Father: {fileID: 1121186394}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2106765779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106765774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c078c789b663f541860ebd4065f63c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  jumpForce: 15
 --- !u!1 &2109373299
 GameObject:
   m_ObjectHideFlags: 0
