@@ -16,8 +16,8 @@ public class BigJumpScript : JumpScript
 				bigJumpForce = value;
 		}
 	}
-
-
+	[Header("Trail")]
+	[SerializeField] private TrailRenderer trailRenderer;
 	[Header("Animation")]
 	[SerializeField] private float chargeTime = 0.2f;
 	[SerializeField] private float crouchDistance = 0.15f;
@@ -122,6 +122,8 @@ public class BigJumpScript : JumpScript
 		SetControlsLock(false);
 
 		fillAnimation.PlayFill(Color.white);
+		trailRenderer.startColor = Color.white;
+		trailRenderer.endColor = Color.white;
 		// Debug.Log(rb.velocity);
 
 		isLaunching = false;

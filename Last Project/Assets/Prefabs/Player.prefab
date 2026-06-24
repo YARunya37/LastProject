@@ -4976,10 +4976,10 @@ GameObject:
   - component: {fileID: 4007190723285990818}
   - component: {fileID: 4007190723285990821}
   - component: {fileID: 4007190723285990820}
+  - component: {fileID: 4007190723285990824}
   - component: {fileID: 4007190723285990823}
   - component: {fileID: 4007190723285990822}
   - component: {fileID: 4007190723285990825}
-  - component: {fileID: 4007190723285990824}
   - component: {fileID: 4007190723285990827}
   - component: {fileID: 4007190723285990819}
   - component: {fileID: 4007190723285990817}
@@ -5114,63 +5114,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4007190723285990823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4007190723285990829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af7084b4a81e7fe4ca4531a54958405a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walls:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &4007190723285990822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4007190723285990829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f90483aa32771b566a2fe5148f0de3bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walls:
-    serializedVersion: 2
-    m_Bits: 0
-  jump: {fileID: 4007190723285990824}
-  jumpForce: 13
-  startScale: 3
-  fallingScale: 2
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &4007190723285990825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4007190723285990829}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66f8a9d7261fde155857e0d1fc8cdc23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walls:
-    serializedVersion: 2
-    m_Bits: 0
-  dashForce: 20
-  dashDuration: 0.3
-  UI: {fileID: 0}
-  dashRing: {fileID: 4007190722483108952}
-  ringOffset: 0.6
 --- !u!82 &4007190723285990824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5267,6 +5210,63 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4007190723285990823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007190723285990829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af7084b4a81e7fe4ca4531a54958405a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walls:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &4007190723285990822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007190723285990829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90483aa32771b566a2fe5148f0de3bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walls:
+    serializedVersion: 2
+    m_Bits: 0
+  jump: {fileID: 4007190723285990824}
+  jumpForce: 13
+  startScale: 3
+  fallingScale: 2
+  ground:
+    serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &4007190723285990825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007190723285990829}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f8a9d7261fde155857e0d1fc8cdc23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walls:
+    serializedVersion: 2
+    m_Bits: 0
+  dashForce: 20
+  dashDuration: 0.3
+  dashRing: {fileID: 4007190722483108952}
+  ringOffset: 0.6
+  trailRenderer: {fileID: 4007190723733488601}
 --- !u!114 &4007190723285990827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5289,6 +5289,7 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 0
+  trailRenderer: {fileID: 4007190723733488601}
   chargeTime: 0.2
   crouchDistance: 0.15
   crouchTime: 0.08

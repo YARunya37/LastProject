@@ -8,6 +8,7 @@ public class DashScript : PlayerController
     [SerializeField] float dashDuration;
     [SerializeField] private ParticleSystem dashRing;
     [SerializeField] private float ringOffset = 0.6f;
+    [SerializeField] private TrailRenderer trailRenderer;
     PlayerFillAnimation fillAnimation;
     PlayerController controller;
     float lastGravity;
@@ -24,6 +25,8 @@ public class DashScript : PlayerController
             GetComponent<JumpScript>().enabled = false;
             GetComponent<PlayerController>().enabled = false;
             fillAnimation.PlayFill(Color.white);
+            trailRenderer.startColor = Color.white;
+            trailRenderer.endColor = Color.white;
             lastGravity = rb.gravityScale;
             rb.gravityScale = 0.2f;
             rb.velocity = Vector2.zero;
