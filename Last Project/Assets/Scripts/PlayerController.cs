@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] LayerMask walls;
 	protected Rigidbody2D rb;
 	protected GameManager gm;
+	protected bool controlsLocked;
 	float speed = 8;
 	float lastdirection = 0;
 	void Start()
@@ -20,6 +21,9 @@ public class PlayerController : MonoBehaviour
 	}
 	void Move()
 	{
+		if (controlsLocked)
+			return;
+
 		if (Input.GetButton("Horizontal") && CanMove())
 		{
 			CanMove();
@@ -61,5 +65,9 @@ public class PlayerController : MonoBehaviour
 		{
 			return lastdirection;
 		}
+	}
+	public void SetControlsLock(bool value)
+	{
+		controlsLocked = value;
 	}
 }

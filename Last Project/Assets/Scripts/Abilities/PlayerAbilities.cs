@@ -12,7 +12,7 @@ public class PlayerAbilities : MonoBehaviour
     private Color jumpColor =
         new Color(0.866666f, 0.3568628f, 0.3568628f);
 
-
+    private PlayerFillAnimation fillAnimation;
     private DashScript dashScript;
     private BigJumpScript bigJumpScript;
     private SpriteRenderer spriteRenderer;
@@ -22,25 +22,30 @@ public class PlayerAbilities : MonoBehaviour
         dashScript = GetComponent<DashScript>();
         bigJumpScript = GetComponent<BigJumpScript>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        fillAnimation = GetComponent<PlayerFillAnimation>();
     }
 
     public void ActivateDash()
     {
+        if (!dashScript.enabled)
+        {
+            fillAnimation.PlayFill(dashColor);
+        }
         DisableAllAbilities();
 
         dashScript.enabled = true;
-
-        spriteRenderer.color = dashColor;
     }
 
     public void ActivateBigJump(float jumpForce)
     {
+        if (!bigJumpScript.enabled)
+        {
+            fillAnimation.PlayFill(jumpColor);
+        }
         DisableAllAbilities();
 
         bigJumpScript.JumpForce = jumpForce;
         bigJumpScript.enabled = true;
-
-        spriteRenderer.color = jumpColor;
     }
 
     private void DisableAllAbilities()
