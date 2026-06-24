@@ -6,7 +6,6 @@ public class DashScript : PlayerController
 {
     [SerializeField] float dashForce;
     [SerializeField] float dashDuration;
-    [SerializeField] Canvas UI;
     [SerializeField] private ParticleSystem dashRing;
     [SerializeField] private float ringOffset = 0.6f;
     PlayerFillAnimation fillAnimation;
@@ -22,7 +21,6 @@ public class DashScript : PlayerController
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            UI.enabled = false;
             GetComponent<JumpScript>().enabled = false;
             GetComponent<PlayerController>().enabled = false;
             fillAnimation.PlayFill(Color.white);
