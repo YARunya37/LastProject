@@ -4797,6 +4797,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4007190723733488601, guid: 3671590c330d91b429ec54a57aee686e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c83759d8b79570d49b28a659d03059f4, type: 2}
+    - target: {fileID: 7745596690249806328, guid: 3671590c330d91b429ec54a57aee686e, type: 3}
+      propertyPath: deathAnimationTime
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745596690249806328, guid: 3671590c330d91b429ec54a57aee686e, type: 3}
+      propertyPath: respawnAnimationTime
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3671590c330d91b429ec54a57aee686e, type: 3}
 --- !u!1 &404856291
