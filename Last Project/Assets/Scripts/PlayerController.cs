@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 	protected Rigidbody2D rb;
 	protected GameManager gm;
 	protected bool controlsLocked;
+	public float FacingDirection { get; private set; } = 1;
 	float speed = 8;
 	float lastdirection = 0;
 	void Start()
@@ -24,6 +25,17 @@ public class PlayerController : MonoBehaviour
 		if (controlsLocked)
 			return;
 
+		float horizontal = Input.GetAxisRaw("Horizontal");
+
+		if (horizontal > 0)
+		{
+			FacingDirection = 1;
+		}
+		else if (horizontal < 0)
+		{
+			FacingDirection = -1;
+		}
+		
 		if (Input.GetButton("Horizontal") && CanMove())
 		{
 			CanMove();
