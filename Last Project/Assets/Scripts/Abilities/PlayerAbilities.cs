@@ -3,6 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Canvas))]
 public class PlayerAbilities : MonoBehaviour
 {
+    [Header("Trail")]
+    [SerializeField] TrailRenderer trailRenderer;
+
     [Header("Colors")]
     [SerializeField]
     private Color dashColor =
@@ -15,13 +18,11 @@ public class PlayerAbilities : MonoBehaviour
     private PlayerFillAnimation fillAnimation;
     private DashScript dashScript;
     private BigJumpScript bigJumpScript;
-    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         dashScript = GetComponent<DashScript>();
         bigJumpScript = GetComponent<BigJumpScript>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
         fillAnimation = GetComponent<PlayerFillAnimation>();
     }
 
@@ -30,6 +31,8 @@ public class PlayerAbilities : MonoBehaviour
         if (!dashScript.enabled)
         {
             fillAnimation.PlayFill(dashColor);
+            trailRenderer.startColor = dashColor;
+            trailRenderer.endColor = dashColor;
         }
         DisableAllAbilities();
 
@@ -41,6 +44,8 @@ public class PlayerAbilities : MonoBehaviour
         if (!bigJumpScript.enabled)
         {
             fillAnimation.PlayFill(jumpColor);
+            trailRenderer.startColor = jumpColor;
+            trailRenderer.endColor = jumpColor;
         }
         DisableAllAbilities();
 

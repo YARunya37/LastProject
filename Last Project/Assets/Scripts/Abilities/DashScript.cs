@@ -7,6 +7,8 @@ public class DashScript : PlayerController
     [SerializeField] float dashForce;
     [SerializeField] float dashDuration;
     [SerializeField] Canvas UI;
+    [SerializeField] private ParticleSystem dashRing;
+    [SerializeField] private float ringOffset = 0.6f;
     PlayerFillAnimation fillAnimation;
     PlayerController controller;
     float lastGravity;
@@ -28,6 +30,17 @@ public class DashScript : PlayerController
             rb.gravityScale = 0.2f;
             rb.velocity = Vector2.zero;
             rb.AddForce(new Vector2(dashForce * controller.FacingDirection, 0), ForceMode2D.Impulse);
+            // Effect
+            float direction = controller.FacingDirection;
+
+            Vector3 ringPosition =
+                transform.position -
+                Vector3.right * direction * ringOffset;
+
+            dashRing.transform.position = ringPosition;
+
+            dashRing.Play();
+            
             StartCoroutine(Dash());
 
         }
