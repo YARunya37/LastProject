@@ -1529,11 +1529,11 @@ PolygonCollider2D:
       - {x: -15.846002, y: 6.748001}
       - {x: -15.618263, y: -6.449385}
       - {x: 9.780938, y: -6.1886363}
-      - {x: 9.836042, y: -6.139968}
-      - {x: 9.787021, y: -5.8864303}
+      - {x: 9.416335, y: -6.139968}
+      - {x: 9.496454, y: -5.789574}
       - {x: 9.763317, y: -4.865997}
-      - {x: 14.453904, y: -4.7967863}
-      - {x: 14.495432, y: -3.7051935}
+      - {x: 10.870244, y: -3.1179552}
+      - {x: 14.237148, y: -0.08924985}
 --- !u!1 &97233829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,18 +3411,18 @@ MonoBehaviour:
   m_YDamping: 0.9
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.45
-  m_ScreenY: 0.78
+  m_ScreenX: 0.4
+  m_ScreenY: 0.6
   m_CameraDistance: 10
   m_DeadZoneWidth: 0
-  m_DeadZoneHeight: 2
+  m_DeadZoneHeight: 0.49
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
   m_SoftZoneWidth: 0.1
-  m_SoftZoneHeight: 2
+  m_SoftZoneHeight: 0.5
   m_BiasX: 0
-  m_BiasY: 0
-  m_CenterOnActivate: 1
+  m_BiasY: -0.5
+  m_CenterOnActivate: 0
   m_GroupFramingMode: 2
   m_AdjustmentMode: 0
   m_GroupFramingSize: 0.8
@@ -17268,7 +17268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473405599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.488304, y: 24.866796, z: -7.62477}
+  m_LocalPosition: {x: -36.69265, y: 21.947199, z: -7.62477}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19331,7 +19331,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660389770}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -19410,8 +19410,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1660389770}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -96.86821, y: -30.761934, z: -0.33462086}
-  m_LocalScale: {x: 1, y: 33.443085, z: 1}
+  m_LocalPosition: {x: -96.86821, y: -27.86, z: -0.33462086}
+  m_LocalScale: {x: 6.8137503, y: 33.443085, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1343361905}
@@ -27418,8 +27418,8 @@ PolygonCollider2D:
     - - {x: 21.491985, y: -1.783575}
       - {x: 17.899746, y: -0.7097945}
       - {x: -15.652155, y: -0.091469765}
-      - {x: -15.625693, y: -4.8560634}
-      - {x: -20.323832, y: -4.937944}
+      - {x: -19.144781, y: -3.2095175}
+      - {x: -20.259262, y: -4.8410883}
       - {x: -20.289251, y: -5.505165}
       - {x: -20.551573, y: -6.711925}
       - {x: -15.747986, y: -7.033138}
