@@ -21653,6 +21653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoostPlatform (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 76573956613927942, guid: 79caeeaf6a1a9794b87f5b328c79037a, type: 3}
+      propertyPath: boostForce
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 76573956613927944, guid: 79caeeaf6a1a9794b87f5b328c79037a, type: 3}
       propertyPath: m_RootOrder
       value: 5
