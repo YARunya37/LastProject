@@ -13053,7 +13053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a454e26ec12911945a1b39129bea0acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curVirtualCam: {fileID: 2050381295}
+  curVirtualCam: {fileID: 1473405599}
 --- !u!4 &1243398048
 Transform:
   m_ObjectHideFlags: 0
