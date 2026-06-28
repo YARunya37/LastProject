@@ -992,6 +992,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7990290175517503682, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990290175517503682, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1510036321}
+    - target: {fileID: 7990290175517503682, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SceneLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990290176712156740, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 7990290176712156740, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990290176712156740, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7990290176712156741, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1080,13 +1104,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause menu
       objectReference: {fileID: 0}
+    - target: {fileID: 7990290176712156745, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990290177097408379, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1510036321}
+    - target: {fileID: 7990290177097408379, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UnPause
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
---- !u!223 &510675647 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 7990290176712156740, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
-  m_PrefabInstance: {fileID: 510675646}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3643,7 +3674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d4020b3dd4f5c299286f63775d83e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 510675647}
+  canvas: {fileID: 0}
   UI: {fileID: 962374043}
 --- !u!4 &1510036322
 Transform:

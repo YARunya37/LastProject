@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 	}
 	private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+		if (Input.GetKeyDown(KeyCode.Escape) && canvas)
 		{
 			Time.timeScale = 0f;
 			gameObject.SetActive(false);

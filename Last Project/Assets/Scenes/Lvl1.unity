@@ -6310,7 +6310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d4020b3dd4f5c299286f63775d83e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 1760755242}
+  canvas: {fileID: 0}
   UI: {fileID: 1389242331}
 --- !u!1 &524693353
 GameObject:
@@ -19439,11 +19439,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!223 &1760755242 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 7990290176712156740, guid: 15a94d5366f7b8248ad1ff41f453dd3a, type: 3}
-  m_PrefabInstance: {fileID: 7990290176319051886}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1763911666
 GameObject:
   m_ObjectHideFlags: 0
